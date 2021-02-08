@@ -126,12 +126,14 @@ header {
   margin-bottom: 0.8rem;
   padding-left: 0.5rem;
 }
+/* display block for input and create account links */
 .form-input-container input,
 .create-account-container .create-account,
 .sign-up-google-container .sign-up-google {
   display: block;
   width: 100%;
 }
+/* styles for input */
 .form-input-container input {
   line-height: 2.3rem;
   border: none;
@@ -140,6 +142,7 @@ header {
   outline: none;
 }
 
+/* styles for 'create' and 'sign up' containers */
 .create-account-container,
 .sign-up-google-container {
   margin-bottom: 0.5rem;
@@ -177,3 +180,50 @@ header {
   width: 1.1rem;
   transform: translateY(-50%);
 }
+
+/* End header */
+
+
+/* Start first section */
+
+.trust {
+  padding: 2rem 0;
+  text-align: center;
+  background-color: #ddd;
+}
+.trust-title {
+  margin-bottom: 2rem;
+}
+.trust h5 {
+  color: #777;
+  text-transform: uppercase;
+}
+.pad-icons {
+  padding: 0.5rem;
+}
+.icons-container img {
+  display: block;
+  width: 100%;
+  height: 50px;
+  margin: 0 auto;
+  object-fit: cover;
+}
+#docker, #slack, #git {
+  object-fit: contain;
+}
+
+.stories {
+  margin: 2rem 0 0;
+}
+.stories a {
+  text-decoration: none;
+  color: #0971f1;
+}
+.stories a:hover {
+  text-decoration: underline;
+}
+.stories i {
+  margin-left: 1rem;
+}
+
+/* End first section */
