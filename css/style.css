@@ -1,3 +1,5 @@
+/* General rules */
+
 * {
   margin: 0;
   padding: 0;
@@ -7,6 +9,15 @@
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+.clearfix {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* End general rules */
+
 
 /* Start nav */
 nav {
@@ -73,6 +84,7 @@ nav ul li a:hover {
     display: none;
   }
 }
+
 /* End nav */
 
 
@@ -227,3 +239,49 @@ header {
 }
 
 /* End first section */
+
+
+/* Start second section */
+.deploy {
+  padding: 3rem 0;
+}
+.deploy-title {
+  margin-bottom: 4rem;
+}
+.deploy-title h2 ,.deploy-title p {
+  text-align: center;
+}
+.deploy-title p {
+  margin: 1rem 0;
+  padding: 0 7.8rem;
+  font-size: 1.2rem;
+}
+
+.deploy ul {
+  display: block;
+  width: 25%;
+  margin-left: auto;
+  margin-right: 10rem;
+  list-style: none;
+}
+.deploy ul li {
+  padding: .7rem 0;
+  padding-left: .5rem;
+  border-left: 1px solid #777;
+  font-size: 1.1rem;
+  color: #666;
+}
+.conf-description {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding-bottom: 1.5rem;
+}
+.conf-description p {
+  padding-right: 5rem;
+}
+.conf-description h3 {
+  margin: 1rem 0;
+}
+
+/* End second section */
