@@ -47,13 +47,13 @@ nav ul li a:hover {
 }
 .ul-fl-right li:last-child a {
   padding: .3rem .6rem;
-  border: 1px solid blue;
+  border: 1px solid #0971f1;
   border-radius: .2rem;
-  color: blue;
+  color: #0971f1;
 }
 .ul-fl-right li:last-child a:hover {
   text-decoration: none;
-  background-color: blue;
+  background-color: #0971f1;
   color: white;
 }
 .md-display {
@@ -65,7 +65,7 @@ nav ul li a:hover {
   }
   .md-display a {
     float: right;
-    margin-right: 4vw;
+    margin-right: 2vw;
     font-size: 1.5rem;
     color: blue;
   }
@@ -75,14 +75,105 @@ nav ul li a:hover {
 }
 /* End nav */
 
+
 /* Start Header */
 header {
-
-  width: 100%;
-  padding-top: 4rem;
-}
-header img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  padding-top: calc(4rem + 60px);
+  padding-bottom: 60px;
+  background-image: url(../img/bg-home-hero-3.svg);
+  background-position: center;
+  background-repeat: repeat-x;
+  background-size: cover;
+}
+
+/* Title header */
+.title {
+  padding: 0px 80px 0 1vw;;
+}
+.title h1, .title p {
+  color: white;
+}
+.title h1 {
+  font-size: 3.5rem;
+  margin-bottom: 1vw;
+  padding-right: 20px;
+}
+.title p {
+  font-size: 1.3rem;
+}
+/* End title */
+
+/* Title Form */
+.get-started {
+  margin-right: 2vw;
+  padding: 1.5rem 1rem;
+  background-color: #fff;
+  text-align: center;
+  border-radius: .5rem;
+}
+.get-started p:nth-child(2) {
+  color: #0971f1;
+  margin: 0.5rem;
+  font-size: 1.7rem;
+  font-weight: 500;
+}
+/* Form */
+.form-input-container {
+  border: 1px solid #ddd;
+  border-radius: .3rem;
+  margin-bottom: 0.8rem;
+  padding-left: 0.5rem;
+}
+.form-input-container input,
+.create-account-container .create-account,
+.sign-up-google-container .sign-up-google {
+  display: block;
+  width: 100%;
+}
+.form-input-container input {
+  line-height: 2.3rem;
+  border: none;
+}
+.form-input-container input:focus {
+  outline: none;
+}
+
+.create-account-container,
+.sign-up-google-container {
+  margin-bottom: 0.5rem;
+  border-radius: .3rem;
+  padding: .3rem 0;
+  font-weight: 500;
+}
+.create-account-container .create-account,
+.sign-up-google-container .sign-up-google {
+  display: block;
+  line-height: 1.5rem;
+  text-decoration: none;
+}
+.create-account-container {
+  background-color: #7398ea;
+  border: 1px solid #7398ea;
+}
+.create-account {
+  color: white;
+}
+
+.sign-up-google-container {
+  position: relative;
+  box-shadow: 2px 2px 5px #ddd;
+  margin-bottom: 1rem;
+}
+.sign-up-google {
+  color: #333;
+}
+#google-icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  left: 2%;
+  width: 1.1rem;
+  transform: translateY(-50%);
 }
