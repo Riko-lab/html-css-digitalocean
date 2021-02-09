@@ -400,3 +400,72 @@ header {
 }
 
 /* End fifth section */
+
+
+/* Sixth section equal to Third section*/
+
+
+/* Start seventh section */
+
+.get-started-now {
+  padding: 3rem 0;
+  background-color: blue;
+  text-align: center;
+}
+.get-started-title {
+  color: white;
+}
+.btn-container {
+  margin-top: 2rem;
+}
+.btn-container .btn-white {
+  display: inline-block;
+  padding: .7rem 1.5rem;
+  text-decoration: none;
+  color: blue;
+  background-color: white;
+  border-radius: .3rem;
+}
+.btn-white:hover {
+  background-color: #ddd;
+}
+/* End seventh section */
+
+
+/* Footer */
+footer {
+  padding: 3rem 0;
+  background-color: darkBlue;
+}
+.logo-small {
+  height: 2.5rem;
+}
+.logo-small img {
+  height: 100%;
+}
+.copyright {
+  color: #BBB;
+}
+.copyright p {
+  margin: .7rem 0;
+}
+.socials {
+  font-size: 1.5rem;
+}
+.socials a:not(:last-child) {
+  margin-right: 3%;
+}
+footer h4 {
+  line-height: 2.5rem;
+  color: white;
+}
+footer ul {
+  list-style: none;
+}
+footer ul li {
+  padding-bottom: 1rem;
+}
+footer a {
+  color: #BBB;
+  text-decoration: none;
+}
