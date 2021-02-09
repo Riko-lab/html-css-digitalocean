@@ -83,7 +83,7 @@
   width: 100%;
 }
 /* mediaquery colonne */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   .col-xs-1 {
     width: calc((100% / 12) * 1);
   }
@@ -125,7 +125,7 @@
   }
 }
 
-@media screen and (max-width: 992px) and (min-width: 769px) {
+@media screen and (max-width: 992px) and (min-width: 768px) {
   .col-md-1 {
     width: calc((100% / 12) * 1);
   }

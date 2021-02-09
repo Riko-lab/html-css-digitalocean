@@ -16,6 +16,11 @@ body {
   clear: both;
 }
 
+.pad {
+  padding-left: 2vw;
+  padding-right: 2vw;
+}
+
 h2, h3, h4 {
   color: #242465
 }
@@ -100,8 +105,6 @@ nav ul li a:hover {
 
 /* Start Header */
 header {
-  width: 100%;
-  height: 100%;
   padding-top: calc(4rem + 60px);
   padding-bottom: 60px;
   background-image: url(../img/bg-home-hero-3.svg);
@@ -124,13 +127,16 @@ header {
 }
 .title p {
   font-size: 1.3rem;
+  margin: 1vw 0 4vw;;
   color: #ddd;
 }
 /* End title */
 
 /* Title Form */
+
 .get-started {
-  margin-right: 2vw;
+  max-width: 30rem;
+  margin: 0 auto;
   padding: 1.5rem 1rem;
   background-color: #fff;
   text-align: center;
@@ -297,6 +303,7 @@ header {
 }
 .conf-description h3 {
   margin: 1rem 0;
+  padding-right: 1rem;
 }
 
 /* End second section */
@@ -326,12 +333,12 @@ header {
 }
 .panel-image:before {
   content: "\f053";
-  margin-right: 3rem;
+  margin-right: 2vw;
   color: #2424658c;
 }
 .panel-image:after {
   content: "\f054";
-  margin-left: 3rem;
+  margin-left: 2vw;
   color: #242465;
 }
 .panel-image img {
@@ -355,9 +362,13 @@ header {
 .features h2 {
   text-align: center
 }
+.features h4 {
+  margin-top: 1vw;
+}
 .mg-top {
   margin-top: 3rem;
 }
+
 .features a {
   display: inline-block;
   margin-top: 1rem;
@@ -477,6 +488,7 @@ footer {
 }
 .copyright {
   color: #BBB;
+  font-size: 0.8rem;
 }
 .copyright p {
   margin: .7rem 0;
@@ -486,6 +498,7 @@ footer {
 }
 .socials {
   font-size: 1.5rem;
+  margin-bottom: 2vw;
 }
 .socials a:not(:last-child) {
   margin-right: 3%;
@@ -503,4 +516,131 @@ footer ul li {
 footer a {
   color: #BBB;
   text-decoration: none;
+}
+
+
+/* Media queries tablet*/
+
+
+@media screen and (max-width: 1024px) {
+
+  /* Header */
+  .title h1 {
+    font-size: 3rem;
+  }
+
+  .get-started {
+    padding: 2rem 1rem;
+  }
+
+}
+
+@media screen and (max-width: 992px) {
+
+  .container .table:first-child .container-table {
+    margin-right: 0;
+  }
+  .container .table:nth-child(2) .container-table {
+    margin-left: 0;
+  }
+  #line th,
+  #line td {
+    border-bottom: 2px solid white;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+  h2 {
+    font-size: 1.2rem;
+  }
+
+  /* Header */
+  .title {
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .title h1 {
+    font-size: 1.8rem;
+  }
+  .title p {
+    font-size: 1rem;
+    color: #ddd;
+  }
+  .get-started {
+    padding: 3vw 3vw;
+  }
+  .get-started h2, .get-started p:nth-child(2){
+    font-size: 1.3rem;
+  }
+
+  /* Second Section */
+  .deploy-title {
+    margin-bottom: 4rem;
+  }
+  .deploy-title p {
+    padding: 0 0;
+    font-size: .8rem;
+  }
+  .deploy ul {
+    margin: 0;
+  }
+  .conf-description {
+    width: 100%;
+    padding-bottom: 1.5rem;
+  }
+  .conf-description:first-child {
+    padding-top: 1.5rem;
+  }
+  .conf-description p {
+    padding-right: 0;
+  }
+
+  /* Third Section */
+  .panel-image {
+    height: auto;
+  }
+  .panel-image:before, .panel-image:after {
+    content: none;
+  }
+  .panel-image img {
+    width: 90%;
+  }
+  .panel-caption i {
+    display: none;
+  }
+
+  /* Start fourth section */
+  .features .pad {
+    padding: 4vw 2vw;
+  }
+  .features h4 {
+    margin: 4vw 0;
+  }
+  .mg-top {
+    margin-top: 3rem;
+  }
+
+  .features a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    color: #154ef0;
+    font-weight: 500;
+  }
+  .features a:hover {
+    text-decoration: underline;
+  }
+
+  /* fifth section */
+  .container .table:first-child .container-table {
+    margin-right: 0;
+  }
+  .container .table:nth-child(2) .container-table {
+    margin-left: 0;
+  }
+  #line th,
+  #line td {
+    border-bottom: 2px solid white;
+  }
 }
