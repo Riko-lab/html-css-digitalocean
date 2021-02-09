@@ -16,6 +16,16 @@ body {
   clear: both;
 }
 
+h2, h3, h4 {
+  color: #242465
+}
+h2 {
+  font-size: 2rem;
+}
+ p {
+  color: #6b6b8a;
+  font-weight: 500;
+}
 /* End general rules */
 
 
@@ -104,7 +114,7 @@ header {
 .title {
   padding: 0px 80px 0 1vw;;
 }
-.title h1, .title p {
+.title h1 {
   color: white;
 }
 .title h1 {
@@ -114,6 +124,7 @@ header {
 }
 .title p {
   font-size: 1.3rem;
+  color: #ddd;
 }
 /* End title */
 
@@ -125,10 +136,12 @@ header {
   text-align: center;
   border-radius: .5rem;
 }
+.get-started h2, .get-started p:nth-child(2){
+  font-size: 1.7rem;
+}
 .get-started p:nth-child(2) {
   color: #0971f1;
   margin: 0.5rem;
-  font-size: 1.7rem;
   font-weight: 500;
 }
 /* Form */
@@ -154,35 +167,35 @@ header {
   outline: none;
 }
 
-/* styles for 'create' and 'sign up' containers */
-.create-account-container,
-.sign-up-google-container {
-  margin-bottom: 0.5rem;
-  border-radius: .3rem;
-  padding: .3rem 0;
-  font-weight: 500;
-}
-.create-account-container .create-account,
-.sign-up-google-container .sign-up-google {
+/* styles for 'create' and 'sign up' links */
+.create-account, .sign-up-google {
   display: block;
+  padding: .3rem 0;
+  border-radius: .3rem;
   line-height: 1.5rem;
   text-decoration: none;
-}
-.create-account-container {
-  background-color: #7398ea;
-  border: 1px solid #7398ea;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 .create-account {
   color: white;
+  background-color: #7398ea;
+  border: 1px solid #7398ea;
+}
+.create-account:hover {
+  background-color: #264ca1;
+  border: 1px solid #264ca1;
 }
 
 .sign-up-google-container {
   position: relative;
   box-shadow: 2px 2px 5px #ddd;
   margin-bottom: 1rem;
+  border-radius: .3rem
 }
 .sign-up-google {
   color: #333;
+  border: 1px solid white;
 }
 #google-icon {
   position: absolute;
@@ -230,6 +243,7 @@ header {
 .stories a {
   text-decoration: none;
   color: #0971f1;
+  font-weight: 600;
 }
 .stories a:hover {
   text-decoration: underline;
@@ -253,7 +267,7 @@ header {
 }
 .deploy-title p {
   margin: 1rem 0;
-  padding: 0 7.8rem;
+  padding: 0 5rem;
   font-size: 1.2rem;
 }
 
@@ -269,7 +283,8 @@ header {
   padding-left: .5rem;
   border-left: 1px solid #777;
   font-size: 1.1rem;
-  color: #666;
+  font-weight: 400;
+  color: #6b6b8a;
 }
 .conf-description {
   display: inline-block;
@@ -312,16 +327,23 @@ header {
 .panel-image:before {
   content: "\f053";
   margin-right: 3rem;
+  color: #2424658c;
 }
 .panel-image:after {
   content: "\f054";
   margin-left: 3rem;
+  color: #242465;
 }
 .panel-image img {
   height: 100%;
 }
 .panel-caption p {
   padding: 2rem 0 1rem;
+  color: #242465;
+}
+.fa-circle {
+  color: #0072ff;
+  font-size: 0.7rem;
 }
 /* End third Section */
 
@@ -336,7 +358,16 @@ header {
 .mg-top {
   margin-top: 3rem;
 }
-
+.features a {
+  display: inline-block;
+  margin-top: 1rem;
+  text-decoration: none;
+  color: #154ef0;
+  font-weight: 500;
+}
+.features a:hover {
+  text-decoration: underline;
+}
 /* End fourth section */
 
 
@@ -344,7 +375,7 @@ header {
 
 .around-world {
   padding: 4rem 0;
-  background-color: blue;
+  background-image: linear-gradient(180deg, #2929bf, #353590);
 }
 .around-world-title {
   margin-bottom: 3rem;
@@ -370,6 +401,7 @@ header {
 .table table td:nth-child(2) {
   width: 65%;
   padding-left: 5%;
+  color: #ccc;
 }
 .table table th, .table table td {
   padding: 10px 0;
@@ -385,11 +417,10 @@ header {
 .table table td:last-child a {
   color: lightBlue;
   text-decoration: none;
+  color: #0efbf0;
 }
-.table table td:last-child::after {
-  font-family: FontAwesome;
-  content: "\f105";
-  margin-left: 10%;
+.table table td:last-child a:hover {
+  text-decoration: underline;
 }
 /* end styiling table */
 .container .table:first-child .container-table {
@@ -409,10 +440,10 @@ header {
 
 .get-started-now {
   padding: 3rem 0;
-  background-color: blue;
+  background-image: linear-gradient(180deg, #2929bf, #353590);
   text-align: center;
 }
-.get-started-title {
+.get-started--now-title h2 {
   color: white;
 }
 .btn-container {
@@ -422,9 +453,10 @@ header {
   display: inline-block;
   padding: .7rem 1.5rem;
   text-decoration: none;
-  color: blue;
+  color: #0072ff;
   background-color: white;
   border-radius: .3rem;
+  font-weight: 500;
 }
 .btn-white:hover {
   background-color: #ddd;
@@ -435,7 +467,7 @@ header {
 /* Footer */
 footer {
   padding: 3rem 0;
-  background-color: darkBlue;
+  background-color: #191944;
 }
 .logo-small {
   height: 2.5rem;
@@ -448,6 +480,9 @@ footer {
 }
 .copyright p {
   margin: .7rem 0;
+}
+.copyright span {
+  color: #888;
 }
 .socials {
   font-size: 1.5rem;
