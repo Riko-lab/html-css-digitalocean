@@ -285,3 +285,118 @@ header {
 }
 
 /* End second section */
+
+
+/* Start third Section */
+
+.control-panel {
+  padding: 3rem;
+  background-color: #ddd;
+  text-align: center;
+}
+.control-panel-title p {
+  padding: 2rem 0 3rem;
+}
+.panel-image {
+  text-align: center;
+  height: 24rem;
+}
+.panel-image:before, .panel-image:after {
+  position: relative;
+  display: inline-block;
+  font-family: FontAwesome;
+  bottom: 50%;
+  transform: translateY(50%);
+  font-size: 2rem;
+}
+.panel-image:before {
+  content: "\f053";
+  margin-right: 3rem;
+}
+.panel-image:after {
+  content: "\f054";
+  margin-left: 3rem;
+}
+.panel-image img {
+  height: 100%;
+}
+.panel-caption p {
+  padding: 2rem 0 1rem;
+}
+/* End third Section */
+
+
+/* Start fourth section */
+.features {
+  padding: 3rem 0 5rem;
+}
+.features h2 {
+  text-align: center
+}
+.mg-top {
+  margin-top: 3rem;
+}
+
+/* End fourth section */
+
+
+/* Start fifth section */
+
+.around-world {
+  padding: 4rem 0;
+  background-color: blue;
+}
+.around-world-title {
+  margin-bottom: 3rem;
+}
+.around-world-title h2 {
+  text-align: center;
+  color: #fff;
+}
+
+/* styiling table */
+.table table {
+  width: 100%;
+  text-align: left;
+  color: white;
+  border-collapse: collapse;
+}
+.table table th {
+  width: 15%;
+}
+.table table td:last-child {
+  width: 20%;
+}
+.table table td:nth-child(2) {
+  width: 65%;
+  padding-left: 5%;
+}
+.table table th, .table table td {
+  padding: 10px 0;
+}
+.table table tr:not(:last-child) th,
+.table table tr:not(:last-child) td {
+  border-bottom: 2px solid white;
+}
+.table table th {
+  text-transform: uppercase;
+  text-align: center;
+}
+.table table td:last-child a {
+  color: lightBlue;
+  text-decoration: none;
+}
+.table table td:last-child::after {
+  font-family: FontAwesome;
+  content: "\f105";
+  margin-left: 10%;
+}
+/* end styiling table */
+.container .table:first-child .container-table {
+  margin-right: 4%;
+}
+.container .table:nth-child(2) .container-table {
+  margin-left: 4%;
+}
+
+/* End fifth section */
