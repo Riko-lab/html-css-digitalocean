@@ -4,8 +4,8 @@ I tried to copy Digitalocean's Homepage.
 
 ## Technologies
 
-HTML
-CSS
+* HTML
+* CSS
 
 ### What I learned
 
