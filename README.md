@@ -1,6 +1,6 @@
 # Digitalocean
 
-I tried to copy Digitalocean's Homepage.
+I tried to clone Digitalocean's Homepage.
 
 ## Technologies
 
